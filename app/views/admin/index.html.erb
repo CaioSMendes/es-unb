@@ -23,7 +23,7 @@
 
 <p id="notice"><%= notice %></p>
 
-<%# <h1>Painel do Administrador</h1> %>
+<h1>Painel do Administrador</h1>
 
 
 <div class="container">
@@ -45,11 +45,11 @@
                 <td><%= activity.date.strftime("%d %b %Y") %></td>   
                 <td><%= link_to 'Ver detalhes', activity,class:"btn btn-warning m-2" %></td>
                 <td><%= link_to 'Editar', edit_activity_path(activity), class:"btn btn-primary m-2" %></td>
-                <%# <td><%= link_to 'Excluir', activity, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger m-2" %>
+                <td><%= link_to 'Excluir', activity, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger m-2" %></td>
               </tr>
         <% end %>
       </tbody>
   </table>
 </div>
 
-<%# <%= link_to 'Nova Atividade', new_activity_path, class:"btn btn-primary" %> 
+<%= link_to 'Nova Atividade', new_activity_path, class:"btn btn-primary" %>
